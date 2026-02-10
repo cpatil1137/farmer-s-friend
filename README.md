@@ -1,8 +1,5 @@
 
 
-## Project info
-
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
 
 **Use your preferred IDE**
 
@@ -35,6 +32,4 @@ This project is built with:
 
 
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)

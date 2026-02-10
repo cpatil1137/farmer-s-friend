@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 42 33% 97%;
+    --foreground: 150 20% 15%;
+    --card: 42 25% 99%;
+    --card-foreground: 150 20% 15%;
+    --popover: 42 25% 99%;
+    --popover-foreground: 150 20% 15%;
+    --primary: 145 42% 30%;
+    --primary-foreground: 42 50% 97%;
+    --secondary: 38 75% 55%;
+    --secondary-foreground: 38 60% 12%;
+    --muted: 42 18% 91%;
+    --muted-foreground: 150 8% 42%;
+    --accent: 24 65% 50%;
+    --accent-foreground: 24 80% 98%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 42 18% 87%;
+    --input: 42 18% 87%;
+    --ring: 145 42% 30%;
+    --radius: 0.75rem;
+
+    --harvest: 38 80% 55%;
+    --harvest-foreground: 38 50% 10%;
+    --earth: 25 40% 35%;
+    --earth-foreground: 25 10% 95%;
+    --crop: 120 40% 45%;
+    --crop-foreground: 120 10% 10%;
+    --water: 210 60% 50%;
+    --water-foreground: 210 10% 98%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 150 15% 8%;
+    --foreground: 42 30% 92%;
+    --card: 150 12% 12%;
+    --card-foreground: 42 30% 92%;
+    --popover: 150 12% 12%;
+    --popover-foreground: 42 30% 92%;
+    --primary: 145 42% 40%;
+    --primary-foreground: 150 15% 8%;
+    --secondary: 38 60% 45%;
+    --secondary-foreground: 38 80% 95%;
+    --muted: 150 10% 18%;
+    --muted-foreground: 42 15% 60%;
+    --accent: 24 55% 45%;
+    --accent-foreground: 24 80% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 150 10% 20%;
+    --input: 150 10% 20%;
+    --ring: 145 42% 40%;
+
+    --harvest: 38 70% 50%;
+    --harvest-foreground: 38 50% 10%;
+    --earth: 25 35% 30%;
+    --earth-foreground: 25 10% 95%;
+    --crop: 120 35% 38%;
+    --crop-foreground: 120 10% 95%;
+    --water: 210 50% 45%;
+    --water-foreground: 210 10% 98%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+@layer utilities {
+  .hero-gradient {
+    background: linear-gradient(
+      135deg,
+      hsl(var(--primary) / 0.06) 0%,
+      hsl(var(--harvest) / 0.1) 50%,
+      hsl(var(--secondary) / 0.06) 100%
+    );
+  }
+  .card-hover {
+    @apply transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5;
+  }
+  .profit-positive {
+    color: hsl(var(--primary));
+  }
+  .profit-negative {
+    color: hsl(var(--destructive));
+  }
+}

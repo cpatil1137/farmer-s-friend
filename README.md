@@ -1,9 +1,15 @@
+## Project Info
+
+**Project Name:** Farmer’s Friend  
+**Live Application:** https://farmer-s-friend.vercel.app/
+
+**Overview:**  
+Farmer’s Friend is a web-based application that helps farmers by providing structured agricultural guidance through a user-friendly and bilingual (Marathi & English) interface.
+
+**Deployment:**  
+The application is deployed on Vercel with source code managed using GitHub.
 
 
-
-**Use your preferred IDE**
-
-Follow these steps:
 
 
 **Edit a file directly in GitHub**
